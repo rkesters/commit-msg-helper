@@ -1,0 +1,6 @@
+-   id: commit-msg-helper
+    name: Commit Message Helper
+    description: Builds Commit Message based on branch name
+    entry: commit-msg-helper
+    language: node
+    types: [text]

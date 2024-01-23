@@ -1,0 +1,27 @@
+{
+    "extends": ["@tsconfig/strictest/tsconfig", "@tsconfig/node18/tsconfig"],
+    "compilerOptions": {
+		"rootDir": "./src",
+		"outDir": "./dist",
+		"declarationDir": "./dist/types",
+		"lib": ["es2021", "dom"],
+        "allowJs": false,
+        "checkJs": false,
+        "resolveJsonModule": true,
+        "composite": true,
+        "declaration": true,
+        "declarationMap": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitOverride": true,
+        "noImplicitReturns": true,
+        "noPropertyAccessFromIndexSignature": false,
+        "noUncheckedIndexedAccess": false,
+        "exactOptionalPropertyTypes": false,
+        "inlineSourceMap": true,
+        "verbatimModuleSyntax": true,
+        "noUnusedLocals": true,
+        "allowUnusedLabels": false
+    },
+	"include": ["src/**/*.ts"],
+    "exclude": ["dist", "node_modules", "test"]
+}
