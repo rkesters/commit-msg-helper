@@ -24,7 +24,7 @@ const configs = [
       "@typescript-eslint/no-var-requires": "off",
     },
   },
-  { ignores: ["*.less.d.ts"], files: ["src/**/*.ts", "test/**/*.ts"] },
+  { ignores: ["*.less.d.ts" , "dist/**/*.*", "*.js"], files: ["src/**/*.ts", "test/**/*.ts"] },
   {
     languageOptions: {
       parser: tsParser,

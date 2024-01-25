@@ -1,6 +1,10 @@
 -   id: commit-msg-helper
     name: Commit Message Helper
     description: Builds Commit Message based on branch name
-    entry: commit-msg-helper
+    entry: commit-msg-helper.sh
     language: node
     types: [text]
+    stages: 
+     - prepare-commit-msg
+    pass_filenames: false
+    always_run: true

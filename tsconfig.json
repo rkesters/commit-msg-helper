@@ -19,7 +19,7 @@
         "exactOptionalPropertyTypes": false,
         "inlineSourceMap": true,
         "verbatimModuleSyntax": true,
-        "noUnusedLocals": true,
+        "noUnusedLocals": false,
         "allowUnusedLabels": false
     },
 	"include": ["src/**/*.ts"],
