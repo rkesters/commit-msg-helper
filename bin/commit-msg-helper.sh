@@ -1,5 +1,5 @@
 #!/bin/bash
-#bin script
+#bin scripts
 rebasingBranch() {
     locations=('rebase-merge' 'rebase-apply')
     for location in "${locations[@]}"; do
