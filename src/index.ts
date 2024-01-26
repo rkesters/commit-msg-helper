@@ -1,6 +1,5 @@
-import yargs from 'yargs';
-//import path from 'node:path';
 import fs from 'fs-extra';
+import yargs from 'yargs';
 
 function shouldSkip(
 	branchName: string,
