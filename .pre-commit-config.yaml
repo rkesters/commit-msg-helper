@@ -11,5 +11,5 @@ repos:
 -   repo: ./
     rev: tod
     hooks:
-    -   id: commit-msg-helper
+    -   id: commit-msg-helper  
 

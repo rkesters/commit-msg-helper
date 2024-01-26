@@ -134,7 +134,12 @@ function main() {
 			default: ['^master$', '^main$', '^dev$', '^version/bump.*$'],
 			alias: 'skip-branch',
 		},
-		r: {type: 'boolean', demandOption: false,  default: false , alias: 'ref-in-footer'},
+		r: {
+			type: 'boolean',
+			demandOption: false,
+			default: false,
+			alias: 'ref-in-footer',
+		},
 		f: { type: 'string', demandOption: true, alias: 'commit-msg-filename' },
 		b: { type: 'string', demandOption: true, alias: 'branch-name' },
 		d: {
@@ -156,7 +161,6 @@ function main() {
 			alias: 'header',
 			default: '[{reference}] {type}({scope}): ',
 		},
-
 	});
 	const argv = args.parseSync();
 
@@ -203,10 +207,9 @@ function main() {
 	if (argv.r) {
 		if (!info.footer?.includes(branchParts.groups.reference)) {
 			if (info.footer) {
-				info.footer = `${info.footer}\n${branchParts.groups.reference}`
-			}else {
-				info.footer = branchParts.groups.reference 
-
+				info.footer = `${info.footer}\n${branchParts.groups.reference}`;
+			} else {
+				info.footer = branchParts.groups.reference;
 			}
 		}
 	}
@@ -219,17 +222,14 @@ function main() {
 	}
 
 	if (info.footer && !info.body) {
-		msg = `${msg}\n`
+		msg = `${msg}\n`;
 	}
 
 	if (info.footer) {
 		msg = `${msg}\n\n${info.footer}`;
 	}
 
-	fs.writeFileSync(
-		filenamePath,
-		msg,
-	);
+	fs.writeFileSync(filenamePath, msg);
 }
 
 main();

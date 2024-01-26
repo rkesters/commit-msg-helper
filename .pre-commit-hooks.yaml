@@ -7,4 +7,4 @@
     stages: 
      - prepare-commit-msg
     pass_filenames: false
-    always_run: true
+    always_run: true  

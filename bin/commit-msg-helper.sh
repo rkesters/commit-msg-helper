@@ -14,4 +14,4 @@ rebasingBranch() {
     done
 }
 
-node ./dist/index.js -f $1 -b $BRANCHNAME 
+node ./dist/index.js -f $1 -b $BRANCHNAME   
