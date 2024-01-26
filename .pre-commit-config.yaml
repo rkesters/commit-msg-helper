@@ -9,7 +9,7 @@ repos:
     -   id: check-yaml
     -   id: check-added-large-files
 -   repo: ./
-    rev: 85c5bd3
+    rev: 8bf2d77
     hooks:
     -   id: commit-msg-helper
-        versbose: true
+        verbose: true
