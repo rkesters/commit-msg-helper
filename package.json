@@ -6,7 +6,9 @@
 		"node": ">=18.0.0"
 	},
 	"main": "index.js",
-	"bin": "pre_commit_hooks/commit-msg-helper",
+	"bin": {
+		"commit-msg-helper": "./bin/commit-msg-helper.sh"
+	},
 	"scripts": {
 		"test": "jest --passWithNoTests",
 		"build": "tsc",
