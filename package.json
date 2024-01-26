@@ -23,6 +23,7 @@
 		"@stylistic/eslint-plugin-ts": "^1.5.4",
 		"@tsconfig/node18": "^18.2.2",
 		"@tsconfig/strictest": "^2.0.2",
+		"@types/debug": "^4.1.12",
 		"@types/fs-extra": "^11.0.4",
 		"@typescript-eslint/eslint-plugin": "^6.19.0",
 		"@typescript-eslint/parser": "^6.19.0",
@@ -48,6 +49,7 @@
 	},
 	"dependencies": {
 		"@types/yargs": "^17.0.32",
+		"debug": "^4.3.4",
 		"yargs": "^17.7.2"
 	}
 }

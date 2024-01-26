@@ -1,5 +1,8 @@
+import debug from 'debug';
 import fs from 'fs-extra';
 import yargs from 'yargs';
+
+const dbg = debug('commit-msg-helper');
 
 function shouldSkip(
 	branchName: string,
@@ -126,6 +129,7 @@ function decomposeMessage(message: string): CommitMessageInfo {
 }
 
 function main() {
+	dbg(`ARGS : ${process.argv.join(',')}`);
 	const args = yargs(process.argv.slice(2)).options({
 		s: {
 			type: 'array',
